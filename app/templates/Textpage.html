@@ -132,7 +132,7 @@
         margin-top: -1.6rem;
       }
       #gandhi{
-
+        width: 40rem;
       }
       .gandhi_top{
         margin-top: -9rem;
@@ -154,6 +154,112 @@
         .republic_icon_top{
           margin-top: -0rem;
           margin-left: -1.5rem;
+        }
+      }
+      @media screen and (max-width:240px) {
+        #footer_decor{
+          width: 5rem;
+        }
+        .footer_decor_top{
+          margin-top: -12.2rem;
+        }
+      }
+      @media screen and (min-width:241px) and (max-width:367px) {
+        #footer_decor{
+          width: 10rem;
+        }
+        .footer_decor_top{
+          margin-top: -15.2rem;
+        }
+      }
+      @media screen and (min-width:368px) and (max-width:429px) {
+        #footer_decor{
+          width: 10rem;
+        }
+        .footer_decor_top{
+          margin-top: -14rem;
+        }
+      }
+      @media screen and (min-width:430px) {
+        #footer_decor{
+          width: 19rem;
+        }
+        .footer_decor_top{
+          margin-top: -21.2rem;
+        }
+      }
+      #flag_indian{
+        width: 10rem;
+        transform: rotate(-7deg);
+      }
+      .flag_indian_top{
+        margin-left: -17rem;
+        margin-top: 1rem;
+      }
+      @media screen and (min-width:549px) and (max-width:750px) {
+        #flag_indian{
+          width: 6rem;
+          transform: rotate(-7deg);
+        }
+        .flag_indian_top{
+          margin-left: -10rem;
+          margin-top: 0.7rem;
+        }
+      }
+      @media screen and (max-width:550px) {
+        #flag_indian{
+          width: 6rem;
+          transform: rotate(-7deg);
+        }
+        .flag_indian_top{
+          margin-left: -9.5rem;
+          margin-top: 0.5rem;
+        }
+      }
+      @media screen and (max-width:300px) {
+        #flag_indian{
+          width: 5rem;
+          transform: rotate(-7deg);
+        }
+        .flag_indian_top{
+          margin-left: -8.2rem;
+          margin-top: 0.8rem;
+        }
+      }
+      @media screen and (max-width:247px) {
+        #flag_indian{
+          width: 5rem;
+          transform: rotate(-7deg);
+        }
+        .flag_indian_top{
+          margin-left: -7.2rem;
+          margin-top: 0.8rem;
+        }
+      }
+      @media screen and (max-width:214px) {
+        #flag_indian{
+          width: 5rem;
+          transform: rotate(-7deg);
+        }
+        .flag_indian_top{
+          margin-left: -4.6rem;
+          margin-top: 0.8rem;
+        }
+      }
+      @media screen and (min-width:401px) and (max-width:932px) {
+        #gandhi{
+          width: 40rem;
+        }
+        .gandhi_top{
+          margin-left: -24rem;
+        }
+      }
+      @media screen and (max-width:400px) {
+        #gandhi{
+          width: 30rem;
+        }
+        .gandhi_top{
+          margin-left: -20rem;
         }
       }
     </style>
@@ -894,10 +1000,16 @@
           </div>
         </div>
       </section>
+
+      <div class="position-relative">
+        <div class="position-absolute flag_indian_top start-50">
+          <img id="flag_indian" draggable="false" src="{% static 'republic/gif/flag1.gif' %}" alt="">
+        </div>
+      </div>
+
       <section id="why-choose-us">
-        <div class="row container">
-          <div class="col-12">
-            <h4 style="color: rgb(243, 243, 243)">//Why Choose Us</h4>
+        <div class="row container"><div class="col-12">
+            <h4 style="color: rgb(243, 243, 243)">Why Choose Us</h4>
             <h3 style="color: #ffff">
               Some Of The Reason For Choosing
               <span style="color: #0fa49b">Our IT Solutions</span>
@@ -1903,6 +2015,12 @@
       </div>
     </footer>
     <!-- End Footer -->
+
+    <div class="position-relative">
+      <div class="position-absolute end-0 footer_decor_top">
+        <img id="footer_decor" draggable="false" src="{% static 'republic/bg/republic_bg.png' %}" alt="">
+      </div>
+    </div>
 
     <!-- <div id="preloader"></div> -->
     <a

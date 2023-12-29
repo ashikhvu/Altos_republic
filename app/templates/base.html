@@ -58,6 +58,38 @@
     .top_flag{
       margin-top: -1.6rem;
     }
+    @media screen and (max-width:240px) {
+        #footer_decor{
+          width: 5rem;
+        }
+        .footer_decor_top{
+          margin-top: -12.2rem;
+        }
+      }
+      @media screen and (min-width:241px) and (max-width:367px) {
+        #footer_decor{
+          width: 10rem;
+        }
+        .footer_decor_top{
+          margin-top: -15.2rem;
+        }
+      }
+      @media screen and (min-width:368px) and (max-width:429px) {
+        #footer_decor{
+          width: 10rem;
+        }
+        .footer_decor_top{
+          margin-top: -14rem;
+        }
+      }
+      @media screen and (min-width:430px) {
+        #footer_decor{
+          width: 19rem;
+        }
+        .footer_decor_top{
+          margin-top: -21.2rem;
+        }
+      }
   </style>
 
 </head>
@@ -201,8 +233,8 @@
   </footer><!-- End Footer -->
 
   <div class="position-relative">
-    <div class="position-absolute end-0" style="margin-top: -21.2rem;">
-      <img style="width: 19rem;" draggable="false" src="{% static 'republic/bg/republic_bg.png' %}" alt="">
+    <div class="position-absolute end-0 footer_decor_top">
+      <img id="footer_decor" draggable="false" src="{% static 'republic/bg/republic_bg.png' %}" alt="">
     </div>
   </div>
 
