@@ -115,7 +115,53 @@
         margin-top: -21.2rem;
       }
     }
+    @media screen and (max-width:1000px) {
+      .happy_republic{
+        padding-left: 10rem;
+        padding-top: 1rem; 
+        width: 30rem;
+      }
+    }
+    @media screen and (min-width:1001px) {
+      .happy_republic{
+        padding-left: 10rem;
+        padding-top: 1rem; 
+        /* width: 30rem; */
+      }
+    }
+    @media screen and (max-width:932px) {
+      .display_rep1{
+        display: none;
+      }
+      .display_rep2{
+        display: block;
+      }
+    }
+    @media screen and (min-width:933px) {
+      .display_rep1{
+        display: block;
+      }
+      .display_rep2{
+        display: none;
+      }
+    }
+    @media screen and (max-width:540px) {
+      .happy_republic2{
+        width: 20rem;
+      }
+    }
+    @media screen and (max-width:330px) {
+      .happy_republic2{
+        width: 15rem;
+      }
+    }
+    @media screen and (max-width:250px) {
+      .happy_republic2{
+        width: 7rem;
+      }
+    }
   </style>
+  
 
   </head>
   
@@ -317,7 +363,7 @@
   margin: 0;
   width:100%;
   height: 100%;
-  background: linear-gradient(102.57deg,#dc0916,#f41fd6 100%,#f41fd6 0);
+  background: linear-gradient(90deg,#dc5d09,#ffffff,#51f41f);
   border-radius: 1.625rem;
   transition: all 0.4s ease-in-out;
   text-align: center;
@@ -399,7 +445,6 @@ font-size: 0.91.5em;
   
 }
 }
-
 </style>
 
 <div class="container-fluid">
@@ -437,18 +482,25 @@ font-size: 0.91.5em;
               <a class="req-btn" data-bs-toggle="modal" data-bs-target="#apply" href="#">
               
                 <span class="circle">
-                  <span class="icon arrow">Join With Us</span>
+                  <span class="icon arrow text-dark">Join With Us</span>
                 </span>
               
               </a>  
             </div>
 
             <!-- Message alert for success job apply -->
-         
            
           </div>
+
+          
         </div>
-        
+        <div class="display_rep1">
+          <img class="happy_republic" draggable="false" src="{% static 'republic/decor/about_design.png' %}" alt="">
+        </div>
+
+        <div class="text-center display_rep2">
+          <img class="happy_republic2" draggable="false" src="{% static 'republic/decor/about_design.png' %}" alt="">
+        </div>
       </div>
   
 
