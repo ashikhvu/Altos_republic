@@ -479,8 +479,74 @@
       grid-template-columns: repeat(1,1fr);
       }
     }
-    
-   
+    #sathya{
+      width: 20rem;
+    }
+    .sathya_top{
+      margin-top: -7.2rem;
+      margin-right: 10rem;
+    }
+    @media screen and (max-width:1399px) {
+      #sathya{
+        width: 20rem;
+      }
+      .sathya_top{
+        margin-top: -7.2rem;
+        margin-right: 4.8rem;
+      }
+    }
+    @media screen and (max-width:1199px) {
+      #sathya{
+        width: 15rem;
+      }
+      .sathya_top{
+        margin-top: -5.8rem;
+        margin-right: 15rem;
+      }
+    }
+    @media screen and (max-width:991px) {
+      #sathya{
+        width: 15rem;
+      }
+      .sathya_top{
+        margin-top: -5.8rem;
+        margin-right: 6.8rem;
+      }
+    }
+    @media screen and (max-width:767px) {
+      #sathya{
+        width: 10rem;
+      }
+      .sathya_top{
+        margin-top: -3.8rem;
+        margin-right: 1.5rem;
+      }
+    }
+    @media screen and (max-width:420px) {
+      #sathya{
+        width: 7rem;
+      }
+      .sathya_top{
+        margin-top: -2.5rem;
+        margin-right: 1.5rem;
+      }
+    }
+    #ribbon1{
+      width: 10rem;
+    }
+    .ribbon1_top{
+      margin-bottom: -25rem;
+    }
+    @media screen and (max-width:1199px) {
+      #ribbon1{
+        width: 7rem;
+      }
+    }
+    @media screen and (max-width:500px) {
+      #ribbon1{
+        width: 4rem;
+      }
+    }
  </style>
 
 
@@ -493,7 +559,14 @@
           <p>Check our Events</p>
         </div>
 
+        <div class="position-relative">
+          <div class="position-absolute end-0 sathya_top">
+            <img id="sathya" src="{% static 'republic/decor/backup/sathyagraha.png' %}" alt="">
+          </div>
+        </div>
+
         <div class="container events-box">
+
           {% for i in allevents %}
             <div class="card">
               <h5>{{i.ev_des1}} </h5>
@@ -513,15 +586,16 @@
     <section>
       {% if pos %}
       <div class="container" id="poster-box">
-      
-         
-       
-            
           {% for i in pos %}
            
               <div class="card">
-               
+                
                   {% if i.ps_img %}
+                  <div class="position-relative" style="z-index: 1;">
+                    <div class="position-absolute end-0 top-0 ribbon1_top">
+                      <img id="ribbon1" src="{% static 'republic/decor/ribbons/ribbon_indian1.png' %}" alt="">
+                    </div>
+                  </div>
                   <div class="poster-img">
                     <a href="{{i.ps_img.url}}" download="{{i.ps_img.url}}">
                       <img src="{{i.ps_img.url}}">
